@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://ikshanamit.000webhostapp.com/covid/style.css">
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style>
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://c.tenor.com/Ev8uyUUk24MAAAAC/prank-text.gif') 50% 50% no-repeat rgb(255,255,255);
+</style>
+
+</head>
+
+<body>
+    <div class="loader"></div>
+<div class="tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">Statistics</label>
+  <div class="tab"><br>
+    <h3>India's Live Statistics For Covid-19 🎐️</h3><br/>
+  
+  <div class="card-deck text-center">
+    <div class="card mb-2">
+      <div class="card-body bg-primary text-light rounded">
+        <h5 class="card-title"><i class="fas fa-tachometer-alt fa-2x"></i></h5>
+        <p>Active Cases</p> <h4 id="Active_Cases"></h4>
+       
+      </div>
+    </div>
+    <div class="card mb-2">
+      <div class="card-body bg-info text-light rounded">
+        <h5 class="card-title"><i class="fas fa-list fa-2x"></i></h5>
+        <p>Total Cases</p> <h4 id="Total_Cases"></h4>
+       
+      </div>
+    </div>
+    <div class="card mb-2">
+      <div class="card-body bg-warning text-dark rounded">
+        <h5 class="card-title"><i class="fas fa-times-circle fa-2x"></i></h5>
+         <p>Critical Cases</p><h4 id="Critical_Cases"></h4>
+       
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body bg-danger text-light rounded">
+        <h5 class="card-title"><i class="fa fa-times fa-2x"></i></h5>
+        <p>Total Death</p><h4 id="Total_Death"></h4>
+        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body bg-success text-light rounded">
+        <h5 class="card-title"><i class="fas fa-check-square fa-2x"></i></h5>
+         <p >Total Recovery</p><h4 id="Recovered_Cases"></h4>
+       
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body bg-secondary text-light rounded">
+        <h5 class="card-title"><i class="fas fa-eye fa-2x"></i></h5>
+         <p >Total Tests Done</p><h4 id="Total_Test_Done"></h4>
+       
+      </div>
+    </div>
+  </div>
+  
+  <br/>
+<hr/> <br/>
+<h3 class="heading">Search Country Specific</h3>
+<div class="select">
+  <select id="country"></select>
+</div>
+<div class="country-chart"></div>
+
+
+</div>
+
+  
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">Search Vaccines</label>
+  <div class="tab">
+    
+       <div id="userI">
+        
+      
+       
+      
+  
+
+<div class="container">
+	
+	<div class="flex_div">
+		<div class="three_fourth">
+			<div class="board_name">
+				<span class="step_indicator"> <p><span class="location"></span><b><b> - Current Location</b></b></p></span><hr/>
+				<h1>Search Vaccine Drives..</h1>
+				<p>Now search vaccine slots and available timings without any hassle.<br/>Wide range of vaccines available now, COVISHIELD - COVAXIN - SPUTNIK V </p>
+				
+			
+				<div class="spacer"></div>
+			</div>
+			<div class="flex_div board_visibility">
+				<div class="one_half private">
+					<p class="bolder">Enter Area Code</p>
+					<input type="text" id="pincode" placeholder="&nbsp;&nbsp;Enter Pincode">
+				</div>
+				<div class="one_half public">
+					<p class="bolder">Enter Slot Date</p>
+					<input type="text" id="date" placeholder="&nbsp;&nbsp;dd-mm-yy">
+				</div>
+			</div>
+		</div>
+		<div class="one_fourth">
+			<div class="theme">
+				<h4>FAQ</h4>
+				<div class="divider"></div><br/>
+				<h4><b>Is This Real Data?</b></h4>
+			<p>Yes, This is real Data collected from COWIN Database!</p>
+				<div class="theme_color theme_green"></div><br/>
+				<h4><b>Can I Book Slots?</b></h4>
+			<p>No, We just show available slots which are made publically available!</p>
+			</div>
+			<div class="spacer"></div>
+		
+			<div class="divider"></div>
+			<div class="save_board">
+			     <div id="appointmentbtn">
+            <input class="save_button" type="submit" value="Search Slots" id="submit">
+        </div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+    </div>
+ 
+    
+    <div id="citystate"></div>
+    <div id="info"></div>
+  </div>
+  
+  
+  
+   <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">Help Desk</label>
+  <div class="tab">
+ 
+ <div id="box">
+    
+  <p id="text">✔️ Covid Home Care</p>
+  <button onclick="myfunction()">Check Now / Self Assessment</button><p id="demo"></p>
+ <br/> 
+</div>
+
+
+<div class="at-banner">
+  <div class="at-banner__content">
+    <div class="at-banner__text"><b>Covid Central Helpline : <b>011-23978043/46</b> | Covid Maharashtra Helpline : <b>020-26127394</b></b> </div>
+   
+  </div>
+ 
+</div>
+
+<hr/>
+
+
+
+<div id="wrapper">
+  <div id="left-side">
+    <ul>
+      <li class="choose active">
+        <div class="icon active">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#shopping-cart"></use>
+            </g>
+          </svg>
+        </div>
+       State Numbers
+      </li>
+      <li class="pay">
+        <div class="icon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#credit-card"></use>
+            </g>
+          </svg>
+        </div>
+        Food Services
+      </li>
+      <li class="wrap">
+        <div class="icon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#gift"></use>
+            </g>
+          </svg>
+        </div>
+        Home Remedies
+      </li>
+      <li class="ship">
+        <div class="icon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#package"></use>
+            </g>
+          </svg>
+        </div>
+        Exercises
+      </li>
+    </ul>
+  </div>
+
+  <div id="border">
+    <div id="line" class="one"></div>
+  </div>
+
+  <div id="right-side">
+    <div id="first" class="active">
+ 
+
+      <p><b>Please Select State For Numbers</b></p>
+<select class="select1" id="food-select" >
+  <option value="" selected >Select State</option>
+</select> 
+
+<table id="food-list">
+ 
+  <thead>
+       <tr>
+            <td> State Name </td> 
+            <td> Helpline Numbers </td> 
+            
+            </tr>
+            
+            </thead>
+  <tbody></tbody>
+</table>
+    </div>
+    <div id="second">
+     
+
+      <h2><b><img src="https://i.imgur.com/EnKXFL0.jpg" width="1000px"/> </b></h2>
+
+      <p>Safely Cooked. Checked Temperature. Fast Delivery. Free Sanitizer. No Login. 10+ Restaurants. Now Get your own customized tiffin as low as 60/- <br/><br/><b>➜ Click Here to Order</b></p>
+            
+    </div>
+    <div id="third">
+      
+<p><b>1) Cough.</b> <u>"Honey"</u> is a time-honored remedy for a sore throat. According to one studyTrusted Source, it can also relieve coughs more effectively than OTC medications that contain dextromethorphan (DM), a cough suppressant.<br/><br/>
+<b>2) Steam.</b> Make a <u>Steam bowl</u>. To do this, fill a large bowl with hot water. Add herbs or essential oils, such as eucalyptus or rosemary, which may also relieve decongestion. Lean over the bowl and place a towel over the head. This traps the steam. Inhale the vapors for 5 minutes.<br/><br/>
+      <b>3) Salt-water gargle.</b> Stir half a teaspoon of salt into a cup of warm water until it dissolves. Allow the solution to cool slightly before using it to gargle. Let the <u>mixture sit at the back of the throat</u> for a few moments before spitting it out. Gargle with salt water several times each day until the cough improves.
+      </p>
+
+     
+
+    </div>
+    <div id="fourth">
+      
+
+     
+<p><b>1) Walk.</b> Even in small spaces, walking around or walking on the spot, can help you remain active.<br/><br/>
+<b>2) Knee to elbow.</b> Touch one knee with the opposite elbow, alternating sides. Find your own pace. Try to perform this for 1–2 minutes, rest for 30–60 seconds, and repeat up to 5 times.<br/><br/>
+      <b>3) Bridge.</b> Plant your feet firmly on the ground with the knees over the heels. Lift the hips as much as it feels comfortable and slowly lower them again. Perform this exercise 10–15 times (or more), rest for 30–60 seconds, and repeat up to 5 times.<br/><br/>
+      <b>4) Seated Meditation.</b> Sit comfortably on the floor with your legs crossed (alternatively, sit on a chair). Make sure your back is straight. Close your eyes, relax your body and progressively deepen your breathing.</p>
+
+
+
+    </div>
+  </div>
+</div>
+<script>
+const
+  foodInfo = 
+    [ { Name: 'Maharashtra',     Colour: '020-26127394'  } 
+    , { Name: 'Andhra Pradesh', Colour: '0866-2410978'  } 
+     , { Name: 'Bihar', Colour: '104'  } 
+      , { Name: 'Chhattisgarh', Colour: '104'  } 
+       , { Name: 'Goa', Colour: '104'  } 
+    , { Name: 'Arunachal Pradesh ', Colour: '9436055743'  } 
+    , { Name: 'Assam',    Colour: '6913347770' } 
+    ] 
+, selectFood = document.getElementById('food-select')
+, listFood_t = document.querySelector('table#food-list tbody') 
+  ;
+foodInfo.forEach(item=>
+  {
+  // table listFood elements
+  let row           = listFood_t.insertRow()
+  row.dataset.ref   = item.Name
+
+  row.insertCell().textContent = item.Name
+  row.insertCell().textContent = item.Colour
+
+  // food-select
+  selectFood.add( new Option(item.Name, item.Name))
+  })
+selectFood.add( new Option('Show All Numbers', 'All'))  // last one...
+selectFood.querySelector('option').disabled = true
+
+const tableArticles = listFood_t.querySelectorAll('tr[data-ref]')
+
+tableArticles.forEach(el=>el.className='noDisplay') // none on start...
+
+selectFood.onchange=()=>
+  {
+  let choose = selectFood.value 
+  tableArticles.forEach(art=>
+    {
+    if (choose==='All' || choose===art.dataset.ref)
+      art.classList.remove('noDisplay')
+    else
+      art.classList.add('noDisplay')
+    })
+  }
+</script>
+
+  </div>
+  
+  
+  
+  
+  
+  
+ <!--  <input type="radio" name="tabs" id="tabfive">
+  <label for="tabfive">Testing</label>
+  <div class="tab">
+   
+  
+   
+  </div> -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <input type="radio" name="tabs" id="tabfour">
+  <label for="tabfour">Developer</label>
+  <div class="tab">
+   
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+
+
+    <main>
+   
+      <br/><br/>
+ <section class="section hero">
+            <div class="container">
+                <div class="row direction">
+                    <div class="col-12 col-md-6 col-lg-6 text-position" ><br/><br/>
+                       
+                        <span class="section__span">Hey, I'm <img src="https://i.imgur.com/UDWASLL.png"/></span>
+                        <p class="section__desc">➜ I've Used Multiple API's When creating this project<br/>➜ I've Listed all of them below..Hope you guys like my work!</p><hr/>
+                        
+                        <div class="container">
+  <a class="buttonz" href="#popup">Check API's 📃</a>
+  <div class="popup" id="popup">
+    <div class="popup-inner">
+      <div class="popup__photo">
+        <img src="https://i.pinimg.com/originals/d7/d8/db/d7d8dbf3811c797e5d2cc364743ae3a7.gif" alt="">
+      </div>
+      <div class="popup__text">
+       
+        <p>https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=${pc}&date=${d}</p>
+        
+<hr class="hr-14">
+
+
+         <p>https://corona.lmao.ninja/v2/countries/india</p>
+         <hr class="hr-14">
+        <p>https://api.covid19api.com/summary</p>
+        <hr class="hr-14">
+        <p>https://nominatim.openstreetmap.org/reverse?format=json&lat=</p>
+        
+        
+      </div>
+      <a class="popup__close" href="#">X</a>
+    </div>
+  </div>
+</div>
+                        
+                        
+                        
+                        
+                      
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 text-position">
+                        <img src="https://raw.githubusercontent.com/alaattinerby/Covid-19-Website/4c233460e18c1a8cfba4f7c4830e8da0e7c5e8e9/Covid-19/img/section-image.svg" class="section__image" alt="Quarantine">
+                        <img src="https://raw.githubusercontent.com/alaattinerby/Covid-19-Website/4c233460e18c1a8cfba4f7c4830e8da0e7c5e8e9/Covid-19/img/section-virus.svg" class="section__virus1" alt="">
+                        <img src="https://raw.githubusercontent.com/alaattinerby/Covid-19-Website/4c233460e18c1a8cfba4f7c4830e8da0e7c5e8e9/Covid-19/img/section-virus.svg" class="section__virus2" alt="">
+                        <img src="https://raw.githubusercontent.com/alaattinerby/Covid-19-Website/4c233460e18c1a8cfba4f7c4830e8da0e7c5e8e9/Covid-19/img/section-virus.svg" class="section__virus3" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>   
+  
+      
+    </main>
+   
+  </div>
+  
+
+</div>
+   
+
+<script>
+$(window).load(function() {
+        $(".loader").fadeOut("slow");
+});
+
+</script>
+   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script> 
+<script src="apis/chartapi.js"></script>
+<script src="apis/dashboardapi.js"></script>
+<script src="apis/cowinapi.js"></script>
+
+<script src="apis/assessmentapi.js"></script>
+<script src="apis/slider.js"></script>
+<script src="apis/geolocationapi.js"></script>
+
+ 
+
+</body>
+</html>
