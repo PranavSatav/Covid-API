@@ -3,7 +3,7 @@
 Hey, I'm Pranav! I am a front-end Developer of web. I love learning new technology and skills of web, I was searching internet for inspiration, came across a term "API" programming. Learnt on [any-api.com](https://any-api.com/) 😸.
 
 ## 🤓 What does this project include?
-🍏 India's Live Statistics for Recovery/Deaths/Critical/Active<br>
+🍏 India's Live Statistics for Recovery/Deaths/Critical/Active & More!<br>
 📈 Graph View for all countries around the globe!<br>
 💉 Vaccine Search API and nearest Bookings based on Date and Pincode [No Login]!<br>
 🦮 Help Desk - Showcasing State Helpline numbers / Remedies / Exercises / Food Services.<br>
@@ -13,7 +13,7 @@ Hey, I'm Pranav! I am a front-end Developer of web. I love learning new technolo
 ## 🐗 Motive of "The Covid Projekt"
 I wanted to learn API. So decided to give this project as my first go on the Public API's 💪. I also wanted to contribute to more open source projects so I can improve my skills and help people through this project.
 
-## 🧠 That I know I and use
+## 🧠 That I know and I use
 ### 📚 Language and Pre-Processor
 - HTML5 (RAW)
 - CSS3 (compiled SaaS)
