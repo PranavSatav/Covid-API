@@ -3,7 +3,7 @@
 Hey, I'm Pranav! I am a front-end Developer of web. I love learning new technology and skills of web, I was searching internet for inspiration, came across a term "API" programming. Learnt on [any-api.com](https://any-api.com/) 😸.
 
 ## 🤓 What does this project include?
-🍏 India's Live Statistics for various Datasets<br>
+🍏 India's Live Statistics for Recovery/Deaths/Critical/Active<br>
 📈 Graph View for all countries around the globe!<br>
 💉 Vaccine Search API and nearest Bookings based on Date and Pincode [No Login]!<br>
 🦮 Help Desk - Showcasing State Helpline numbers / Remedies / Exercises / Food Services.<br>
@@ -17,7 +17,9 @@ I wanted to learn API. So decided to give this project as my first go on the Pub
 ### 📚 Language and Pre-Processor
 - HTML5
 - CSS3
+- Bootstrap
 - JavaScript
+
 
 ### 🔧 Tool Used to Write Code
 - Notepad (no, fr)
