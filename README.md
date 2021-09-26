@@ -15,9 +15,9 @@ I wanted to learn API. So decided to give this project as my first go on the Pub
 
 ## 🧠 That I know I and use
 ### 📚 Language and Pre-Processor
-- HTML5
-- CSS3
-- Bootstrap
+- HTML5 (RAW)
+- CSS3 (compiled SaaS)
+- Bootstrap 4.5 / JQuery
 - JavaScript
 
 
