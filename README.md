@@ -1,4 +1,4 @@
-## <img width="30px" src="https://www.psycharchives.org/retrieve/096175aa-f7f2-4970-989d-d934c30b5551" /> "The Covid Projekt"
+##  "The Covid Projekt"
 
 Hey, I'm Pranav! I am a front-end Developer of web. I love learning new technology and skills of web, I was searching internet for inspiration, came across a term "API" programming. Learnt on [any-api.com](https://any-api.com/) 😸.
 
